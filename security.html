@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZYLANCE INVESTASI</title>
+  <link rel="stylesheet" href="css/security.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/logo/favicon.png">
+</head>
+<body>
+  <div class="security-container">
+    <header class="page-header">
+      <button class="back-btn" onclick="history.back()">&larr;</button>
+      <div class="title">
+        <h1>🔒 Keamanan Akun</h1>
+        <p>Lindungi akun Anda dengan fitur keamanan terbaik</p>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <div class="security-item" data-aos="fade-up">
+        <label>Kata Sandi</label>
+        <button class="btn-change" onclick="location.href='change-password.html'">Ubah Kata Sandi</button>
+      </div>
+
+      <div class="security-item" data-aos="fade-up" data-aos-delay="100">
+        <label>Verifikasi 2 Langkah</label>
+        <label class="toggle">
+          <input type="checkbox" id="twoFactor">
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="security-item" data-aos="fade-up" data-aos-delay="200">
+        <label>Notifikasi Login</label>
+        <label class="toggle">
+          <input type="checkbox" id="loginAlert" checked>
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="security-item" data-aos="fade-up" data-aos-delay="300">
+        <label>Perangkat Terdaftar</label>
+        <div class="device-list">
+          <div class="device-item">
+            <span>📱 HP Pribadi</span>
+            <small>Terakhir: 5 menit lalu</small>
+          </div>
+        </div>
+      </div>
+
+      <button class="btn-logout-all" id="logoutAllDevices">Keluar dari Semua Perangkat</button>
+    </main>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({ duration: 800, easing: 'ease-out-quart' });</script>
+</body>
+</html>
