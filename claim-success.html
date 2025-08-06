@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZYLANCE INVESTASI</title>
+  <link rel="stylesheet" href="css/claim.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/logo/favicon.png">
+</head>
+<body>
+  <div class="claim-success-container">
+    <header class="page-header">
+      <button class="back-btn" onclick="location.href='dashboard.html'">&larr;</button>
+      <div class="title">
+        <h1>✅ Klaim Berhasil</h1>
+        <p>Hadiah harian Anda telah ditambahkan</p>
+      </div>
+    </header>
+
+    <main class="main-content" data-aos="zoom-in">
+      <div class="success-card">
+        <div class="icon">🎁</div>
+        <h2>Klaim Berhasil!</h2>
+        <p>Anda telah menerima:</p>
+        <div class="amount" id="claimSuccessAmount">Rp 5.000</div>
+        <p>Terus klaim setiap hari agar tidak hangus.</p>
+        <button class="btn-dashboard" onclick="location.href='dashboard.html'">Kembali ke Dashboard</button>
+      </div>
+    </main>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({ duration: 800, easing: 'ease-out-quart' });</script>
+</body>
+</html>
