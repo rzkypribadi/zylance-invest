@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZYLANCE INVESTASI</title>
+  <link rel="stylesheet" href="css/deposit.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/logo/favicon.png">
+</head>
+<body>
+  <div class="confirm-container">
+    <header class="page-header">
+      <button class="back-btn" onclick="history.back()">&larr;</button>
+      <div class="title">
+        <h1>🔍 Konfirmasi Deposit</h1>
+        <p>Periksa detail sebelum melanjutkan</p>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <div class="confirm-card" data-aos="fade-up">
+        <h2>Detail Deposit</h2>
+        <div class="detail-row">
+          <span>Nominal:</span>
+          <strong id="confirmDepositAmount">Rp 0</strong>
+        </div>
+        <div class="detail-row">
+          <span>Biaya Admin:</span>
+          <strong>Rp 2.000</strong>
+        </div>
+        <div class="detail-row total">
+          <span>Total Bayar:</span>
+          <strong id="totalPayAmount">Rp 0</strong>
+        </div>
+
+        <p class="info-text">
+          Anda akan diarahkan ke pembayaran QRIS. Pastikan data benar.
+        </p>
+
+        <button class="btn-confirm" id="btnProceedToPayment">Lanjutkan ke Pembayaran</button>
+      </div>
+    </main>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({ duration: 800, easing: 'ease-out-quart' });</script>
+</body>
+</html>
