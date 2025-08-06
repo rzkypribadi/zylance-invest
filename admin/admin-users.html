@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin ZYLANCE</title>
+  <link rel="stylesheet" href="css/admin/admin.css">
+  <link rel="stylesheet" href="css/admin/admin-users.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/logo/favicon.png">
+</head>
+<body class="admin-page">
+  <div class="admin-container">
+    <aside class="admin-sidebar">
+      <div class="logo">ZYLANCE ADMIN</div>
+      <nav>
+        <ul>
+          <li><a href="dashboard.html">📊 Dashboard</a></li>
+          <li><a href="users.html">👥 Pengguna</a></li>
+          <li><a href="deposits.html">📥 Deposit</a></li>
+          <li><a href="withdrawals.html">📤 Penarikan</a></li>
+          <li><a href="investments.html">📈 Investasi</a></li>
+          <li><a href="referral-list.html">🔗 Referral</a></li>
+          <li><a href="chat.html">💬 Live Chat</a></li>
+          <li><a href="reports-daily.html">📋 Laporan Harian</a></li>
+          <li><a href="finance-overview.html">💰 Keuangan</a></li>
+          <li><a href="transaction-log.html">📜 Log Transaksi</a></li>
+          <li><a href="add-saldo.html">➕ Tambah Saldo</a></li>
+          <li><a href="deduct-saldo.html">➖ Kurangi Saldo</a></li>
+          <li><a href="user-verify.html">✅ Verifikasi User</a></li>
+          <li><a href="suspended-accounts.html">🚫 Akun Diblokir</a></li>
+          <li><a href="backup-data.html">💾 Backup Data</a></li>
+          <li><a href="system-settings.html">⚙️ Pengaturan Sistem</a></li>
+          <li class="active"><a href="admin-users.html">🔐 Admin Lain</a></li>
+          <li><a href="logs-access.html">👁️ Log Akses</a></li>
+          <li><a href="broadcast-message.html">📢 Siaran</a></li>
+          <li><a href="logout.html">🚪 Keluar</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="admin-main">
+      <header class="admin-header">
+        <h1>🔐 Kelola Admin</h1>
+      </header>
+
+      <div class="admin-content">
+        <div class="add-admin-form">
+          <h2>➕ Tambah Admin Baru</h2>
+          <div class="input-group">
+            <label>Username</label>
+            <input type="text" id="newAdminUsername" placeholder="Masukkan username">
+          </div>
+          <div class="input-group">
+            <label>Kata Sandi</label>
+            <input type="password" id="newAdminPassword" placeholder="Masukkan kata sandi">
+          </div>
+          <div class="input-group">
+            <label>Hak Akses</label>
+            <select id="adminRole">
+              <option value="standar">Standar</option>
+              <option value="super">Super Admin</option>
+            </select>
+          </div>
+          <button class="btn-add-admin" id="btnAddAdmin">Tambah Admin</button>
+        </div>
+
+        <div class="admin-list">
+          <h2>📋 Daftar Admin</h2>
+          <table id="adminTable">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Username</th>
+                <th>Role</th>
+                <th>Tanggal Dibuat</th>
+                <th>Aksi</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td colspan="5" class="empty">Belum ada admin tambahan</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init({ duration: 800, easing: 'ease-out-quart' });</script>
+</body>
+</html>
