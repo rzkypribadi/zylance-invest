@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZYLANCE INVESTASI</title>
+  <link rel="stylesheet" href="css/claim.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/logo/favicon.png">
+</head>
+<body>
+  <div class="claim-container">
+    <header class="page-header">
+      <button class="back-btn" onclick="history.back()">&larr;</button>
+      <div class="title">
+        <h1>🎁 Klaim Harian</h1>
+        <p>Dapatkan bonus setiap hari</p>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <div class="reward-card" data-aos="zoom-in">
+        <div class="icon">💰</div>
+        <div class="amount">Rp 5.000</div>
+        <p class="desc">Bonus harian untuk semua user aktif</p>
+        <button class="btn-claim" id="btnClaimDaily">Klaim Sekarang</button>
+        <p class="status" id="claimStatus">Belum diklaim hari ini</p>
+      </div>
+
+      <div class="streak-section">
+        <h2>🔥 Streak Klaim</h2>
+        <p>Hadiah tambahan jika klaim berturut-turut:</p>
+        <div class="streak-list">
+          <div class="streak-item">3 hari: +Rp 10.000</div>
+          <div class="streak-item">7 hari: +Rp 25.000</div>
+          <div class="streak-item">14 hari: +Rp 50.000</div>
+          <div class="streak-item">30 hari: +Rp 100.000</div>
+        </div>
+        <div class="current-streak">
+          <strong>Anda telah klaim: <span id="streakCount">0</span> hari</strong>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({ duration: 800, easing: 'ease-out-quart' });</script>
+</body>
+</html>
