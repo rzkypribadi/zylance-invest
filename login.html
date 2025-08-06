@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZYLANCE INVESTASI</title>
+  <link rel="stylesheet" href="css/login.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/logo/favicon.png">
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-left" data-aos="fade-right">
+      <div class="logo">ZYLANCE</div>
+      <h1>Investasi Digital Masa Depan</h1>
+      <p>Keamanan tinggi, return menjanjikan, dan kemudahan akses 24/7</p>
+      <div class="stats-grid">
+        <div class="stat-item">
+          <strong>10.000+</strong>
+          <span>Investor Aktif</span>
+        </div>
+        <div class="stat-item">
+          <strong>Rp 250M+</strong>
+          <span>Total Transaksi</span>
+        </div>
+        <div class="stat-item">
+          <strong>99.9%</strong>
+          <span>Uptime Sistem</span>
+        </div>
+      </div>
+    </div>
+    <div class="login-right" data-aos="fade-left">
+      <div class="form-wrapper">
+        <h2>Masuk ke Akun Anda</h2>
+        <p>Selamat datang kembali, akses dashboard Anda sekarang</p>
+        <form id="loginForm">
+          <div class="input-group">
+            <label>Email atau Username</label>
+            <input type="text" id="username" placeholder="Masukkan email atau username" required>
+          </div>
+          <div class="input-group">
+            <label>Kata Sandi</label>
+            <input type="password" id="password" placeholder="Masukkan kata sandi" required>
+          </div>
+          <div class="options-row">
+            <label class="remember-me">
+              <input type="checkbox"> Ingat saya
+            </label>
+            <a href="forgot-password.html" class="forgot-link">Lupa kata sandi?</a>
+          </div>
+          <button type="submit" class="btn-primary">Masuk</button>
+        </form>
+        <div class="divider">
+          <span>atau</span>
+        </div>
+        <button class="btn-google">
+          <img src="assets/icons/google.png" alt="Google"> Masuk dengan Google
+        </button>
+        <p class="register-text">
+          Belum punya akun? <a href="register.html">Daftar di sini</a>
+        </p>
+        <p class="admin-login-link">
+          <a href="admin/login.html">🔐 Masuk sebagai Admin</a>
+        </p>
+      </div>
+    </div>
+  </div>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init({ duration: 800, easing: 'ease-out-quart' });</script>
+</body>
+</html>
