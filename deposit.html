@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZYLANCE INVESTASI</title>
+  <link rel="stylesheet" href="css/deposit.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/logo/favicon.png">
+</head>
+<body>
+  <div class="deposit-container">
+    <header class="page-header">
+      <button class="back-btn" onclick="history.back()">&larr;</button>
+      <div class="title">
+        <h1>➕ Deposit Dana</h1>
+        <p>Pilih nominal dan bayar via QRIS</p>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <div class="info-box">
+        <p>📌 Minimal deposit: <strong>Rp 250.000</strong></p>
+        <p>⚡ Proses otomatis setelah pembayaran diverifikasi</p>
+      </div>
+
+      <div class="amount-grid" id="amountGrid">
+        <button class="amount-btn" data-amount="250000">250rb</button>
+        <button class="amount-btn" data-amount="300000">300rb</button>
+        <button class="amount-btn" data-amount="350000">350rb</button>
+        <button class="amount-btn" data-amount="400000">400rb</button>
+        <button class="amount-btn" data-amount="450000">450rb</button>
+        <button class="amount-btn" data-amount="500000">500rb</button>
+        <button class="amount-btn" data-amount="550000">550rb</button>
+        <button class="amount-btn custom" data-amount="custom">Custom</button>
+      </div>
+
+      <div class="custom-input" id="customInput" style="display: none;">
+        <label>Masukkan Jumlah (Rp)</label>
+        <input type="number" id="customAmount" placeholder="Contoh: 750000">
+      </div>
+
+      <button class="btn-next" id="btnNextStep">Lanjutkan ke Pembayaran</button>
+
+      <div class="qr-section" id="qrSection" style="display: none;">
+        <h2>Bayar via QRIS</h2>
+        <p>Scan QR di bawah ini untuk membayar:</p>
+        <div class="qr-code">
+          <img src="assets/images/qr-placeholder.png" alt="QRIS" id="qrisImage">
+        </div>
+        <div class="payment-info">
+          <p><strong>Nominal:</strong> <span id="paymentAmount">Rp 0</span></p>
+          <p><strong>Status:</strong> <span id="paymentStatus">Menunggu Pembayaran</span></p>
+        </div>
+        <button class="btn-check" id="btnCheckPayment">Periksa Pembayaran</button>
+      </div>
+    </main>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({ duration: 800, easing: 'ease-out-quart' });</script>
+</body>
+</html>
