@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZYLANCE INVESTASI</title>
+  <link rel="stylesheet" href="css/withdraw.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/logo/favicon.png">
+</head>
+<body>
+  <div class="confirm-container">
+    <header class="page-header">
+      <button class="back-btn" onclick="history.back()">&larr;</button>
+      <div class="title">
+        <h1>🔍 Konfirmasi Penarikan</h1>
+        <p>Periksa detail sebelum dikirim</p>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <div class="confirm-card" data-aos="fade-up">
+        <h2>Detail Penarikan</h2>
+        <div class="detail-row">
+          <span>Metode:</span>
+          <strong id="confirmMethod">E-Wallet</strong>
+        </div>
+        <div class="detail-row">
+          <span>Tujuan:</span>
+          <strong id="confirmTarget">OVO - 6281234567890</strong>
+        </div>
+        <div class="detail-row">
+          <span>Jumlah:</span>
+          <strong id="confirmAmount">Rp 0</strong>
+        </div>
+        <div class="detail-row">
+          <span>Biaya Admin:</span>
+          <strong>Rp 5.000</strong>
+        </div>
+        <div class="detail-row total">
+          <span>Total Diterima:</span>
+          <strong id="confirmTotal">Rp 0</strong>
+        </div>
+
+        <p class="info-text">
+          Proses penarikan akan berlangsung dalam 1×24 jam kerja.
+        </p>
+
+        <button class="btn-confirm" id="btnFinalWithdraw">Konfirmasi & Kirim</button>
+      </div>
+    </main>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({ duration: 800, easing: 'ease-out-quart' });</script>
+</body>
+</html>
