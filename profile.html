@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZYLANCE INVESTASI</title>
+  <link rel="stylesheet" href="css/profile.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/logo/favicon.png">
+</head>
+<body>
+  <div class="profile-container">
+    <header class="page-header">
+      <button class="back-btn" onclick="history.back()">&larr;</button>
+      <div class="title">
+        <h1>👤 Profil Saya</h1>
+        <p>Kelola informasi akun Anda</p>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <div class="avatar-section" data-aos="fade-up">
+        <div class="avatar">U</div>
+        <button class="btn-change-avatar">Ubah Foto</button>
+      </div>
+
+      <div class="form-group" data-aos="fade-up" data-aos-delay="100">
+        <label>Nama Lengkap</label>
+        <input type="text" id="fullName" placeholder="Masukkan nama lengkap">
+      </div>
+
+      <div class="form-group" data-aos="fade-up" data-aos-delay="200">
+        <label>Email</label>
+        <input type="email" id="profileEmail" placeholder="Email aktif" readonly>
+      </div>
+
+      <div class="form-group" data-aos="fade-up" data-aos-delay="300">
+        <label>Nomor WhatsApp</label>
+        <input type="tel" id="profileWa" placeholder="Contoh: 6281234567890">
+      </div>
+
+      <div class="form-group" data-aos="fade-up" data-aos-delay="400">
+        <label>Username</label>
+        <input type="text" id="profileUsername" placeholder="Pilih username unik">
+      </div>
+
+      <div class="form-group" data-aos="fade-up" data-aos-delay="500">
+        <label>Tanggal Bergabung</label>
+        <input type="text" id="joinDate" readonly>
+      </div>
+
+      <button class="btn-save-profile" id="btnSaveProfile">Simpan Perubahan</button>
+    </main>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({ duration: 800, easing: 'ease-out-quart' });</script>
+</body>
+</html>
