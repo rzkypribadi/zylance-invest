@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZYLANCE INVESTASI</title>
+  <link rel="stylesheet" href="css/register.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/logo/favicon.png">
+</head>
+<body>
+  <div class="register-container">
+    <div class="register-left" data-aos="fade-right">
+      <div class="logo">ZYLANCE</div>
+      <h1>Bergabunglah dengan Ribuan Investor Sukses</h1>
+      <p>Daftar sekarang dan mulai investasi dengan keuntungan harian stabil</p>
+      <div class="benefits-list">
+        <div class="benefit-item">
+          <span class="icon">✅</span>
+          <span>Verifikasi Instan</span>
+        </div>
+        <div class="benefit-item">
+          <span class="icon">🎁</span>
+          <span>Bonus Referral Rp 15.000/orang</span>
+        </div>
+        <div class="benefit-item">
+          <span class="icon">📱</span>
+          <span>Akses 24/7 via HP & Desktop</span>
+        </div>
+        <div class="benefit-item">
+          <span class="icon">🔒</span>
+          <span>Sistem Keamanan Tingkat Tinggi</span>
+        </div>
+      </div>
+    </div>
+    <div class="register-right" data-aos="fade-left">
+      <div class="form-wrapper">
+        <h2>Buat Akun Baru</h2>
+        <p>Isi data di bawah untuk memulai perjalanan investasi Anda</p>
+        <form id="registerForm">
+          <div class="input-group">
+            <label>Username</label>
+            <input type="text" id="regUsername" placeholder="Pilih username unik" required>
+          </div>
+          <div class="input-group">
+            <label>Email</label>
+            <input type="email" id="regEmail" placeholder="Masukkan email aktif" required>
+          </div>
+          <div class="input-group">
+            <label>Nomor WhatsApp</label>
+            <input type="tel" id="regWa" placeholder="Contoh: 6281234567890" required>
+          </div>
+          <div class="input-group">
+            <label>Kata Sandi</label>
+            <input type="password" id="regPassword" placeholder="Minimal 8 karakter" required>
+          </div>
+          <div class="input-group">
+            <label>Konfirmasi Kata Sandi</label>
+            <input type="password" id="regConfirmPassword" placeholder="Ketik ulang kata sandi" required>
+          </div>
+          <div class="captcha-group">
+            <label>Captcha</label>
+            <div class="captcha-box">
+              <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=ZYLANCE2025" alt="Captcha" id="captchaImage">
+              <button type="button" id="refreshCaptcha">↻</button>
+            </div>
+            <input type="text" id="regCaptcha" placeholder="Masukkan kode dari QR" required>
+          </div>
+          <div class="terms-group">
+            <label class="checkbox-label">
+              <input type="checkbox" id="agreeTerms" required>
+              Saya setuju dengan <a href="terms.html">Syarat & Ketentuan</a> serta <a href="privacy.html">Kebijakan Privasi</a>
+            </label>
+          </div>
+          <button type="submit" class="btn-primary">Daftar Sekarang</button>
+        </form>
+        <div class="login-link">
+          Sudah punya akun? <a href="login.html">Masuk di sini</a>
+        </div>
+        <p class="admin-login-link">
+          <a href="admin/login.html">🔐 Masuk sebagai Admin</a>
+        </p>
+      </div>
+    </div>
+  </div>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init({ duration: 800, easing: 'ease-out-quart' });</script>
+</body>
+          </html>
