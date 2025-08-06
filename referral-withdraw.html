@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZYLANCE INVESTASI</title>
+  <link rel="stylesheet" href="css/referral.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/logo/favicon.png">
+</head>
+<body>
+  <div class="referral-withdraw-container">
+    <header class="page-header">
+      <button class="back-btn" onclick="history.back()">&larr;</button>
+      <div class="title">
+        <h1>💸 Tarik Komisi Referral</h1>
+        <p>Transfer bonus dari undangan Anda</p>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <div class="info-box">
+        <p><strong>Saldo Tersedia:</strong> <span id="referralBalance">Rp 0</span></p>
+        <p><strong>Minimal Penarikan:</strong> Rp 50.000</p>
+      </div>
+
+      <div class="form-group">
+        <label>Metode Penarikan</label>
+        <select id="refWithdrawMethod">
+          <option value="ewallet">E-Wallet</option>
+          <option value="bank">Bank</option>
+        </select>
+      </div>
+
+      <div class="form-group" id="refEwalletGroup">
+        <label>Pilih E-Wallet</label>
+        <select id="refEwalletOption">
+          <option value="ovo">OVO</option>
+          <option value="dana">DANA</option>
+          <option value="gopay">GoPay</option>
+        </select>
+      </div>
+
+      <div class="form-group" id="refBankGroup" style="display: none;">
+        <label>Pilih Bank</label>
+        <select id="refBankOption">
+          <option value="bri">BRI</option>
+          <option value="bni">BNI</option>
+          <option value="bca">BCA</option>
+          <option value="mandiri">Mandiri</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Nomor Tujuan</label>
+        <input type="text" id="refAccountNumber" placeholder="Masukkan nomor e-wallet atau rekening">
+      </div>
+
+      <div class="form-group">
+        <label>Jumlah Penarikan (Rp)</label>
+        <input type="number" id="refWithdrawAmount" placeholder="Minimal 50.000">
+      </div>
+
+      <div class="form-group">
+        <label>Kata Sandi</label>
+        <input type="password" id="refWithdrawPassword" placeholder="Konfirmasi kata sandi" required>
+      </div>
+
+      <button class="btn-withdraw" id="btnConfirmRefWithdraw">Konfirmasi Penarikan</button>
+    </main>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({ duration: 800, easing: 'ease-out-quart' });</script>
+</body>
+</html>
