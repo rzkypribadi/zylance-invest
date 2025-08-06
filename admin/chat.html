@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin ZYLANCE</title>
+  <link rel="stylesheet" href="css/admin/admin.css">
+  <link rel="stylesheet" href="css/admin/chat.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/logo/favicon.png">
+</head>
+<body class="admin-page">
+  <div class="admin-container">
+    <aside class="admin-sidebar">
+      <div class="logo">ZYLANCE ADMIN</div>
+      <nav>
+        <ul>
+          <li><a href="dashboard.html">📊 Dashboard</a></li>
+          <li><a href="users.html">👥 Pengguna</a></li>
+          <li><a href="deposits.html">📥 Deposit</a></li>
+          <li><a href="withdrawals.html">📤 Penarikan</a></li>
+          <li><a href="investments.html">📈 Investasi</a></li>
+          <li><a href="referral-list.html">🔗 Referral</a></li>
+          <li class="active"><a href="chat.html">💬 Live Chat</a></li>
+          <li><a href="reports-daily.html">📋 Laporan Harian</a></li>
+          <li><a href="finance-overview.html">💰 Keuangan</a></li>
+          <li><a href="transaction-log.html">📜 Log Transaksi</a></li>
+          <li><a href="add-saldo.html">➕ Tambah Saldo</a></li>
+          <li><a href="deduct-saldo.html">➖ Kurangi Saldo</a></li>
+          <li><a href="user-verify.html">✅ Verifikasi User</a></li>
+          <li><a href="suspended-accounts.html">🚫 Akun Diblokir</a></li>
+          <li><a href="backup-data.html">💾 Backup Data</a></li>
+          <li><a href="system-settings.html">⚙️ Pengaturan Sistem</a></li>
+          <li><a href="admin-users.html">🔐 Admin Lain</a></li>
+          <li><a href="logs-access.html">👁️ Log Akses</a></li>
+          <li><a href="broadcast-message.html">📢 Siaran</a></li>
+          <li><a href="logout.html">🚪 Keluar</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="admin-main">
+      <header class="admin-header">
+        <h1>💬 Live Chat dengan User</h1>
+      </header>
+
+      <div class="chat-container">
+        <div class="chat-list" id="chatList">
+          <div class="empty">Belum ada percakapan</div>
+        </div>
+        <div class="chat-area">
+          <div class="chat-header">
+            Pilih percakapan untuk memulai
+          </div>
+          <div class="messages" id="adminChatMessages">
+            <!-- Pesan muncul di sini -->
+          </div>
+          <div class="chat-input">
+            <input type="text" placeholder="Ketik balasan..." id="adminReplyInput">
+            <button id="sendReply">Kirim</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init({ duration: 800, easing: 'ease-out-quart' });</script>
+</body>
+</html>
