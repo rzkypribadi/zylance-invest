@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZYLANCE INVESTASI</title>
+  <link rel="stylesheet" href="css/settings.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/logo/favicon.png">
+</head>
+<body>
+  <div class="settings-container">
+    <header class="page-header">
+      <button class="back-btn" onclick="history.back()">&larr;</button>
+      <div class="title">
+        <h1>⚙️ Pengaturan</h1>
+        <p>Sesuaikan pengalaman Anda</p>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <div class="setting-item" data-aos="fade-up">
+        <label>Bahasa</label>
+        <select id="appLanguage">
+          <option value="id">Bahasa Indonesia</option>
+          <option value="en">English</option>
+        </select>
+      </div>
+
+      <div class="setting-item" data-aos="fade-up" data-aos-delay="100">
+        <label>Notifikasi</label>
+        <label class="toggle">
+          <input type="checkbox" id="enableNotif" checked>
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="setting-item" data-aos="fade-up" data-aos-delay="200">
+        <label>Mode Gelap</label>
+        <label class="toggle">
+          <input type="checkbox" id="darkMode">
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="setting-item" data-aos="fade-up" data-aos-delay="300">
+        <label>Auto-Lock Setelah 5 Menit</label>
+        <label class="toggle">
+          <input type="checkbox" id="autoLock" checked>
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="setting-item" data-aos="fade-up" data-aos-delay="400">
+        <label>Tampilan Ringkas</label>
+        <label class="toggle">
+          <input type="checkbox" id="compactView">
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="setting-item" data-aos="fade-up" data-aos-delay="500">
+        <label>Sinkron Otomatis</label>
+        <label class="toggle">
+          <input type="checkbox" id="autoSync" checked>
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <button class="btn-logout" onclick="location.href='logout.html'">🚪 Keluar dari Akun</button>
+    </main>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({ duration: 800, easing: 'ease-out-quart' });</script>
+</body>
+</html>
