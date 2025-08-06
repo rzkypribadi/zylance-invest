@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZYLANCE INVESTASI</title>
+  <link rel="stylesheet" href="css/referral.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/logo/favicon.png">
+</head>
+<body>
+  <div class="referral-container">
+    <header class="page-header">
+      <button class="back-btn" onclick="history.back()">&larr;</button>
+      <div class="title">
+        <h1>🔗 Program Referral</h1>
+        <p>Undang teman, dapatkan komisi</p>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <div class="referral-card" data-aos="fade-up">
+        <h2>Bagikan Link Anda</h2>
+        <div class="ref-link-box">
+          <input type="text" id="referralLink" value="https://sub.digivest.my.id/daftar/ABC123" readonly>
+          <button id="copyRefLinkBtn">Salin</button>
+        </div>
+        <p class="info">Setiap yang daftar lewat link ini, Anda dapat bonus!</p>
+      </div>
+
+      <div class="rewards-structure" data-aos="fade-up" data-aos-delay="100">
+        <h2>💰 Struktur Bonus</h2>
+        <div class="reward-item">
+          <span class="num">1</span>
+          <span class="desc">Orang: <strong>Rp 15.000</strong></span>
+        </div>
+        <div class="reward-item">
+          <span class="num">2</span>
+          <span class="desc">Orang: <strong>Rp 40.000</strong></span>
+        </div>
+        <div class="reward-item">
+          <span class="num">3</span>
+          <span class="desc">Orang: <strong>Rp 70.000</strong></span>
+        </div>
+        <div class="reward-item">
+          <span class="num">4</span>
+          <span class="desc">Orang: <strong>Rp 100.000</strong></span>
+        </div>
+        <div class="reward-item">
+          <span class="num">5+</span>
+          <span class="desc">Setiap orang: <strong>Rp 30.000</strong></span>
+        </div>
+      </div>
+
+      <div class="referral-stats" data-aos="fade-up" data-aos-delay="200">
+        <h2>📊 Statistik Anda</h2>
+        <div class="stat-row">
+          <span>Total Referral:</span>
+          <strong id="totalReferrals">0</strong>
+        </div>
+        <div class="stat-row">
+          <span>Sudah Dibayar:</span>
+          <strong id="paidReferrals">0</strong>
+        </div>
+        <div class="stat-row">
+          <span>Komisi Diperoleh:</span>
+          <strong id="totalEarnings">Rp 0</strong>
+        </div>
+        <div class="stat-row">
+          <span>Komisi Ditarik:</span>
+          <strong>Rp 0</strong>
+        </div>
+      </div>
+
+      <button class="btn-withdraw-ref" id="btnWithdrawReferral">Tarik Komisi</button>
+    </main>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({ duration: 800, easing: 'ease-out-quart' });</script>
+</body>
+</html>
