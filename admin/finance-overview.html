@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin ZYLANCE</title>
+  <link rel="stylesheet" href="css/admin/admin.css">
+  <link rel="stylesheet" href="css/admin/finance-overview.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/logo/favicon.png">
+</head>
+<body class="admin-page">
+  <div class="admin-container">
+    <aside class="admin-sidebar">
+      <div class="logo">ZYLANCE ADMIN</div>
+      <nav>
+        <ul>
+          <li><a href="dashboard.html">📊 Dashboard</a></li>
+          <li><a href="users.html">👥 Pengguna</a></li>
+          <li><a href="deposits.html">📥 Deposit</a></li>
+          <li><a href="withdrawals.html">📤 Penarikan</a></li>
+          <li><a href="investments.html">📈 Investasi</a></li>
+          <li><a href="referral-list.html">🔗 Referral</a></li>
+          <li><a href="chat.html">💬 Live Chat</a></li>
+          <li><a href="reports-daily.html">📋 Laporan Harian</a></li>
+          <li class="active"><a href="finance-overview.html">💰 Keuangan</a></li>
+          <li><a href="transaction-log.html">📜 Log Transaksi</a></li>
+          <li><a href="add-saldo.html">➕ Tambah Saldo</a></li>
+          <li><a href="deduct-saldo.html">➖ Kurangi Saldo</a></li>
+          <li><a href="user-verify.html">✅ Verifikasi User</a></li>
+          <li><a href="suspended-accounts.html">🚫 Akun Diblokir</a></li>
+          <li><a href="backup-data.html">💾 Backup Data</a></li>
+          <li><a href="system-settings.html">⚙️ Pengaturan Sistem</a></li>
+          <li><a href="admin-users.html">🔐 Admin Lain</a></li>
+          <li><a href="logs-access.html">👁️ Log Akses</a></li>
+          <li><a href="broadcast-message.html">📢 Siaran</a></li>
+          <li><a href="logout.html">🚪 Keluar</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="admin-main">
+      <header class="admin-header">
+        <h1>💰 Overview Keuangan</h1>
+        <select id="financePeriod">
+          <option value="harian">Harian</option>
+          <option value="mingguan">Mingguan</option>
+          <option value="bulanan">Bulanan</option>
+          <option value="tahunan">Tahunan</option>
+        </select>
+      </header>
+
+      <div class="admin-content">
+        <div class="finance-stats">
+          <div class="stat-card income">
+            <h3>Pendapatan</h3>
+            <p id="totalIncome">Rp 0</p>
+          </div>
+          <div class="stat-card expense">
+            <h3>Pengeluaran</h3>
+            <p id="totalExpense">Rp 0</p>
+          </div>
+          <div class="stat-card profit">
+            <h3>Keuntungan</h3>
+            <p id="netProfit">Rp 0</p>
+          </div>
+          <div class="stat-card balance">
+            <h3>Saldo Sistem</h3>
+            <p id="systemBalance">Rp 0</p>
+          </div>
+        </div>
+
+        <div class="chart-section">
+          <h2>📊 Grafik Arus Kas</h2>
+          <div class="chart-placeholder">
+            <p>Grafik dinamis akan muncul di sini</p>
+          </div>
+        </div>
+
+        <div class="export-section">
+          <button class="btn-export">📥 Ekspor ke Excel</button>
+          <button class="btn-export">📄 Cetak Laporan</button>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init({ duration: 800, easing: 'ease-out-quart' });</script>
+</body>
+</html>
