@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZYLANCE INVESTASI</title>
+  <link rel="stylesheet" href="css/history.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/logo/favicon.png">
+</head>
+<body>
+  <div class="history-container">
+    <header class="page-header">
+      <button class="back-btn" onclick="history.back()">&larr;</button>
+      <div class="title">
+        <h1>📜 Riwayat Transaksi</h1>
+        <p>Semua aktivitas keuangan Anda</p>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <div class="filter-tabs">
+        <button class="tab active" data-type="all">Semua</button>
+        <button class="tab" data-type="deposit">Deposit</button>
+        <button class="tab" data-type="withdraw">Penarikan</button>
+        <button class="tab" data-type="claim">Klaim</button>
+        <button class="tab" data-type="referral">Referral</button>
+      </div>
+
+      <div class="history-list" id="historyList">
+        <div class="empty-state">
+          <span>📂</span>
+          <p>Belum ada riwayat transaksi</p>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({ duration: 800, easing: 'ease-out-quart' });</script>
+</body>
+</html>
