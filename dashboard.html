@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZYLANCE INVESTASI</title>
+  <link rel="stylesheet" href="css/dashboard.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/logo/favicon.png">
+</head>
+<body>
+  <div class="dashboard-container">
+    <header class="dashboard-header">
+      <div class="logo">ZYLANCE</div>
+      <div class="user-menu">
+        <button class="btn-notif" title="Notifikasi">
+          <span>🔔</span>
+        </button>
+        <div class="user-info">
+          <span class="username">Halo, User</span>
+          <span class="level">Pemula</span>
+        </div>
+        <button class="btn-toggle" id="sidebarToggle">☰</button>
+      </div>
+    </header>
+
+    <div class="main-wrapper">
+      <aside class="sidebar" id="sidebar">
+        <nav>
+          <ul>
+            <li class="active"><a href="dashboard.html">📊 Dashboard</a></li>
+            <li><a href="deposit.html">➕ Deposit</a></li>
+            <li><a href="withdraw.html">💰 Tarik Dana</a></li>
+            <li><a href="claim.html">🎁 Klaim Harian</a></li>
+            <li><a href="referral.html">🔗 Referral</a></li>
+            <li><a href="history.html">📜 Riwayat</a></li>
+            <li><a href="profile.html">👤 Profil Saya</a></li>
+            <li><a href="settings.html">⚙️ Pengaturan</a></li>
+            <li><a href="security.html">🔒 Keamanan</a></li>
+            <li><a href="help-center.html">❓ Bantuan</a></li>
+            <li><a href="logout.html">🚪 Keluar</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="main-content" id="mainContent">
+        <div class="page-title">
+          <h1>Dashboard Utama</h1>
+          <p>Selamat datang di pusat kendali investasi Anda</p>
+        </div>
+
+        <div class="stats-grid" data-aos="fade-up">
+          <div class="stat-card saldo">
+            <div class="icon">💰</div>
+            <div class="info">
+              <label>Saldo Tersedia</label>
+              <div class="value" id="saldoDisplay">Rp 0</div>
+            </div>
+          </div>
+          <div class="stat-card investasi">
+            <div class="icon">📈</div>
+            <div class="info">
+              <label>Investasi Aktif</label>
+              <div class="value" id="investActive">0 Paket</div>
+            </div>
+          </div>
+          <div class="stat-card komisi">
+            <div class="icon">👥</div>
+            <div class="info">
+              <label>Komisi Referral</label>
+              <div class="value" id="referralEarnings">Rp 0</div>
+            </div>
+          </div>
+          <div class="stat-card claim">
+            <div class="icon">🎁</div>
+            <div class="info">
+              <label>Claim Hari Ini</label>
+              <div class="value">Rp 5.000</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="quick-actions" data-aos="fade-up" data-aos-delay="100">
+          <button class="action-btn deposit" onclick="location.href='deposit.html'">➕ Deposit</button>
+          <button class="action-btn withdraw" onclick="location.href='withdraw.html'">💸 Tarik Dana</button>
+          <button class="action-btn claim" onclick="location.href='claim.html'">✅ Klaim Harian</button>
+          <button class="action-btn referral" onclick="location.href='referral.html'">🔗 Bagikan Referral</button>
+        </div>
+
+        <div class="investment-section" data-aos="fade-up" data-aos-delay="200">
+          <h2>🔥 Investasi Anda</h2>
+          <p id="noInvest">Anda belum memiliki paket investasi aktif</p>
+          <div class="investment-list" id="investmentList">
+            <!-- Dinamis via JS -->
+          </div>
+        </div>
+
+        <div class="referral-section" data-aos="fade-up" data-aos-delay="300">
+          <h2>🔗 Program Referral</h2>
+          <p>Dapatkan bonus hingga Rp 30.000 per referral!</p>
+          <div class="referral-card">
+            <div class="ref-link">
+              <span id="refLink">https://sub.digivest.my.id/daftar/ABC123</span>
+              <button id="copyRefBtn">Salin</button>
+            </div>
+            <div class="ref-stats">
+              <div class="stat">
+                <strong id="refCount">0</strong>
+                <span>Referral</span>
+              </div>
+              <div class="stat">
+                <strong id="refPaid">0</strong>
+                <span>Dibayar</span>
+              </div>
+              <div class="stat">
+                <strong>Rp 0</strong>
+                <span>Ditarik</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!-- Live Chat Widget -->
+    <div class="chat-widget">
+      <div class="chat-header" id="chatHeader">
+        💬 Live Chat
+      </div>
+      <div class="chat-body" id="chatBody">
+        <div class="message received">Halo! Butuh bantuan?</div>
+      </div>
+      <div class="chat-input">
+        <input type="text" placeholder="Ketik pesan..." id="chatInput">
+        <button id="sendChat">Kirim</button>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({ duration: 800, easing: 'ease-out-quart' });</script>
+</body>
+</html>
