@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin ZYLANCE</title>
+  <link rel="stylesheet" href="css/admin/admin.css">
+  <link rel="stylesheet" href="css/admin/system-settings.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/logo/favicon.png">
+</head>
+<body class="admin-page">
+  <div class="admin-container">
+    <aside class="admin-sidebar">
+      <div class="logo">ZYLANCE ADMIN</div>
+      <nav>
+        <ul>
+          <li><a href="dashboard.html">📊 Dashboard</a></li>
+          <li><a href="users.html">👥 Pengguna</a></li>
+          <li><a href="deposits.html">📥 Deposit</a></li>
+          <li><a href="withdrawals.html">📤 Penarikan</a></li>
+          <li><a href="investments.html">📈 Investasi</a></li>
+          <li><a href="referral-list.html">🔗 Referral</a></li>
+          <li><a href="chat.html">💬 Live Chat</a></li>
+          <li><a href="reports-daily.html">📋 Laporan Harian</a></li>
+          <li><a href="finance-overview.html">💰 Keuangan</a></li>
+          <li><a href="transaction-log.html">📜 Log Transaksi</a></li>
+          <li><a href="add-saldo.html">➕ Tambah Saldo</a></li>
+          <li><a href="deduct-saldo.html">➖ Kurangi Saldo</a></li>
+          <li><a href="settings-security.html">🔐 Keamanan</a></li>
+          <li><a href="settings-deposit.html">💳 Deposit</a></li>
+          <li><a href="settings-withdraw.html">💸 Withdraw</a></li>
+          <li><a href="settings-referral.html">🔗 Referral</a></li>
+          <li class="active"><a href="settings-investment.html">📈 Investasi</a></li>
+          <li><a href="system-settings.html">⚙️ Umum</a></li>
+          <li><a href="admin-users.html">🔐 Admin Lain</a></li>
+          <li><a href="logs-access.html">👁️ Log Akses</a></li>
+          <li><a href="broadcast-message.html">📢 Siaran</a></li>
+          <li><a href="logout.html">🚪 Keluar</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="admin-main">
+      <header class="admin-header">
+        <h1>📈 Pengaturan Investasi</h1>
+      </header>
+
+      <div class="admin-content">
+        <div class="setting-section">
+          <h2>🔄 Claim Harian</h2>
+          <div class="input-group">
+            <label>Bonus Harian (Rp)</label>
+            <input type="number" value="5000" id="dailyClaimBonus">
+          </div>
+          <div class="input-group">
+            <label>Jam Buka Claim (0-23)</label>
+            <input type="number" value="0" id="claimStartHour" min="0" max="23">
+          </div>
+          <div class="input-group">
+            <label>Jam Tutup Claim (0-23)</label>
+            <input type="number" value="23" id="claimEndHour" min="0" max="23">
+          </div>
+        </div>
+
+        <div class="setting-section">
+          <h2>🔥 Streak Bonus</h2>
+          <div class="input-group">
+            <label>3 Hari: (Rp)</label>
+            <input type="number" value="10000" id="streak3">
+          </div>
+          <div class="input-group">
+            <label>7 Hari: (Rp)</label>
+            <input type="number" value="25000" id="streak7">
+          </div>
+          <div class="input-group">
+            <label>14 Hari: (Rp)</label>
+            <input type="number" value="50000" id="streak14">
+          </div>
+          <div class="input-group">
+            <label>30 Hari: (Rp)</label>
+            <input type="number" value="100000" id="streak30">
+          </div>
+        </div>
+
+        <button class="btn-save-settings" id="saveInvestmentSettings">Simpan Pengaturan Investasi</button>
+      </div>
+    </main>
+  </div>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init({ duration: 800, easing: 'ease-out-quart' });</script>
+</body>
+</html>
