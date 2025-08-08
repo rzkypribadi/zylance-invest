@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin ZYLANCE</title>
+  <link rel="stylesheet" href="css/admin/admin.css">
+  <link rel="stylesheet" href="css/admin/upgrade-requests.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/logo/favicon.png">
+</head>
+<body class="admin-page">
+  <div class="admin-container">
+    <aside class="admin-sidebar">
+      <div class="logo">ZYLANCE ADMIN</div>
+      <nav>
+        <ul>
+          <li><a href="dashboard.html">📊 Dashboard</a></li>
+          <li><a href="users.html">👥 Pengguna</a></li>
+          <li><a href="deposits.html">📥 Deposit</a></li>
+          <li><a href="withdrawals.html">📤 Penarikan</a></li>
+          <li><a href="investments.html">📈 Investasi</a></li>
+          <li><a href="referral-list.html">🔗 Referral</a></li>
+          <li><a href="chat.html">💬 Live Chat</a></li>
+          <li><a href="reports-daily.html">📋 Laporan Harian</a></li>
+          <li><a href="finance-overview.html">💰 Keuangan</a></li>
+          <li><a href="transaction-log.html">📜 Log Transaksi</a></li>
+          <li><a href="add-saldo.html">➕ Tambah Saldo</a></li>
+          <li><a href="deduct-saldo.html">➖ Kurangi Saldo</a></li>
+          <li><a href="settings-security.html">🔐 Keamanan</a></li>
+          <li><a href="settings-deposit.html">💳 Deposit</a></li>
+          <li><a href="settings-withdraw.html">💸 Withdraw</a></li>
+          <li><a href="settings-referral.html">🔗 Referral</a></li>
+          <li><a href="settings-investment.html">📈 Investasi</a></li>
+          <li><a href="email-templates.html">✉️ Template Email</a></li>
+          <li><a href="sms-templates.html">📱 Template SMS</a></li>
+          <li><a href="automation-rules.html">🤖 Aturan Otomasi</a></li>
+          <li><a href="tax-report.html">📑 Laporan Pajak</a></li>
+          <li><a href="audit-trail.html">🔍 Audit Trail</a></li>
+          <li><a href="export-all.html">📤 Ekspor Semua</a></li>
+          <li><a href="banner-manager.html">🖼️ Banner</a></li>
+          <li><a href="popup-manager.html">📣 Popup</a></li>
+          <li><a href="maintenance-mode.html">🛠️ Maintenance</a></li>
+          <li><a href="domain-settings.html">🌐 Domain</a></li>
+          <li><a href="seo-tools.html">🔍 SEO Tools</a></li>
+          <li><a href="media-gallery.html">🖼️ Galeri Media</a></li>
+          <li><a href="feedback-list.html">📝 Feedback</a></li>
+          <li><a href="testimonials.html">🌟 Testimoni</a></li>
+          <li><a href="premium-features.html">💎 Fitur Premium</a></li>
+          <li class="active"><a href="upgrade-requests.html">🚀 Permintaan Upgrade</a></li>
+          <li><a href="system-settings.html">⚙️ Umum</a></li>
+          <li><a href="admin-users.html">🔐 Admin Lain</a></li>
+          <li><a href="logs-access.html">👁️ Log Akses</a></li>
+          <li><a href="broadcast-message.html">📢 Siaran</a></li>
+          <li><a href="logout.html">🚪 Keluar</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="admin-main">
+      <header class="admin-header">
+        <h1>🚀 Permintaan Upgrade ke Premium</h1>
+      </header>
+
+      <div class="admin-content">
+        <div class="upgrade-list">
+          <table id="upgradeTable">
+            <thead>
+              <tr>
+                <th>User</th>
+                <th>Alasan</th>
+                <th>Tanggal</th>
+                <th>Status</th>
+                <th>Aksi</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>investor_pro</td>
+                <td>Butuh akses cepat dan laporan lanjutan</td>
+                <td>10 Apr 2025</td>
+                <td><span class="status pending">Menunggu</span></td>
+                <td>
+                  <button class="btn-approve">✅ Setujui</button>
+                  <button class="btn-reject">❌ Tolak</button>
+                </td>
+              </tr>
+              <tr>
+                <td>gold_user_88</td>
+                <td>Ingin prioritas live chat dan bonus tambahan</td>
+                <td>09 Apr 2025</td>
+                <td><span class="status approved">Disetujui</span></td>
+                <td>
+                  <button class="btn-approve" disabled>✅</button>
+                  <button class="btn-reject" disabled>❌</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init({ duration: 800, easing: 'ease-out-quart' });</script>
+</body>
+</html>
