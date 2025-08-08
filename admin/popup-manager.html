@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin ZYLANCE</title>
+  <link rel="stylesheet" href="css/admin/admin.css">
+  <link rel="stylesheet" href="css/admin/popup-manager.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/logo/favicon.png">
+</head>
+<body class="admin-page">
+  <div class="admin-container">
+    <aside class="admin-sidebar">
+      <div class="logo">ZYLANCE ADMIN</div>
+      <nav>
+        <ul>
+          <li><a href="dashboard.html">📊 Dashboard</a></li>
+          <li><a href="users.html">👥 Pengguna</a></li>
+          <li><a href="deposits.html">📥 Deposit</a></li>
+          <li><a href="withdrawals.html">📤 Penarikan</a></li>
+          <li><a href="investments.html">📈 Investasi</a></li>
+          <li><a href="referral-list.html">🔗 Referral</a></li>
+          <li><a href="chat.html">💬 Live Chat</a></li>
+          <li><a href="reports-daily.html">📋 Laporan Harian</a></li>
+          <li><a href="finance-overview.html">💰 Keuangan</a></li>
+          <li><a href="transaction-log.html">📜 Log Transaksi</a></li>
+          <li><a href="add-saldo.html">➕ Tambah Saldo</a></li>
+          <li><a href="deduct-saldo.html">➖ Kurangi Saldo</a></li>
+          <li><a href="settings-security.html">🔐 Keamanan</a></li>
+          <li><a href="settings-deposit.html">💳 Deposit</a></li>
+          <li><a href="settings-withdraw.html">💸 Withdraw</a></li>
+          <li><a href="settings-referral.html">🔗 Referral</a></li>
+          <li><a href="settings-investment.html">📈 Investasi</a></li>
+          <li><a href="email-templates.html">✉️ Template Email</a></li>
+          <li><a href="sms-templates.html">📱 Template SMS</a></li>
+          <li><a href="automation-rules.html">🤖 Aturan Otomasi</a></li>
+          <li><a href="tax-report.html">📑 Laporan Pajak</a></li>
+          <li><a href="audit-trail.html">🔍 Audit Trail</a></li>
+          <li><a href="export-all.html">📤 Ekspor Semua</a></li>
+          <li><a href="banner-manager.html">🖼️ Banner</a></li>
+          <li class="active"><a href="popup-manager.html">📣 Popup Manager</a></li>
+          <li><a href="maintenance-mode.html">🛠️ Maintenance</a></li>
+          <li><a href="domain-settings.html">🌐 Domain</a></li>
+          <li><a href="system-settings.html">⚙️ Umum</a></li>
+          <li><a href="admin-users.html">🔐 Admin Lain</a></li>
+          <li><a href="logs-access.html">👁️ Log Akses</a></li>
+          <li><a href="broadcast-message.html">📢 Siaran</a></li>
+          <li><a href="logout.html">🚪 Keluar</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="admin-main">
+      <header class="admin-header">
+        <h1>📣 Manajer Popup & Notifikasi</h1>
+      </header>
+
+      <div class="admin-content">
+        <div class="add-popup-form">
+          <h2>➕ Tambah Popup Baru</h2>
+          <div class="input-group">
+            <label>Judul</label>
+            <input type="text" id="popupTitle" placeholder="Contoh: Bonus Harian Rp 10.000!">
+          </div>
+          <div class="input-group">
+            <label>Isi Pesan</label>
+            <textarea id="popupMessage" rows="3" placeholder="Tulis pesan penting untuk user..."></textarea>
+          </div>
+          <div class="input-group">
+            <label>Tampilkan Saat</label>
+            <select id="popupTrigger">
+              <option value="login">Setelah Login</option>
+              <option value="deposit">Setelah Deposit</option>
+              <option value="claim">Setelah Klaim</option>
+            </select>
+          </div>
+          <div class="input-group">
+            <label>Durasi Tampil (detik)</label>
+            <input type="number" value="10" id="popupDuration">
+          </div>
+          <button class="btn-add-popup" id="btnAddPopup">Tambah Popup</button>
+        </div>
+
+        <div class="popup-list">
+          <h2>📋 Daftar Popup Aktif</h2>
+          <table id="popupTable">
+            <thead>
+              <tr>
+                <th>Judul</th>
+                <th>Trigger</th>
+                <th>Status</th>
+                <th>Aksi</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Bonus Harian Rp 10.000!</td>
+                <td>Setelah Login</td>
+                <td><span class="status active">Aktif</span></td>
+                <td>
+                  <button class="btn-edit">✏️</button>
+                  <button class="btn-disable">⏸️</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init({ duration: 800, easing: 'ease-out-quart' });</script>
+</body>
+                </html>
